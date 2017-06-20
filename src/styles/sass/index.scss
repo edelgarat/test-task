@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+@import '~react-md/src/scss/react-md';
+$md-primary-color: $md-blue-grey-500;
+$md-secondary-color: $md-blue-grey-200;
+@include react-md-everything;
+
+
+$leftPaddingForTBL:8px;
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#root{
+    position: relative;
+    margin-left:5%;
+    margin-top:2%;
+    width: 90%;
+    height: 96%;
+    >.app{
+        height:100%; 
+        .title_{
+            display: inline-flex;
+            margin:auto;
+            padding-bottom: 8px;
+            >.titleText_{
+                font-family: "Lato";
+                width:100%;
+                margin-left:5px;
+                &,.titleIcon_>i{
+                    font-size:18px;
+                }
+            }
+        }
+        table{
+            margin-bottom:4%;
+            width: 100%;
+            border: 1px solid lightgray;
+            tr{
+                margin:0;
+                padding: 0;
+            }
+            >thead>tr{
+                background-color: #ecf0f3;
+                height:24px;
+                >th{
+                    margin:0 auto;
+                    padding-top:0;
+                    padding-bottom:0;
+                    padding-left: $leftPaddingForTBL;
+                    font-family: "Lato";
+                    &,>div{
+                        height:18px;
+                    }
+                }
+            }
+            >tbody>tr{background-color: white;}
+            >tbody td{
+                padding-left: $leftPaddingForTBL;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                vertical-align: middle;
+                >div{
+                    >div{
+                        &,>img{
+                            border-radius: 4px;
+                            width: 45px;
+                            height: 45px;
+                        } 
+                    }   
+                    display: inline-flex;
+                }
+                .ItemData{
+                    padding-left: 8px;
+                    margin-top:0;
+                    margin-bottom: 0;
+                    box-sizing: border-box;
+                    
+                     >.ItemData0, >.ItemData1{
+                        i{
+                            font-size: 16px;
+                            color:#6E6E6E;
+                        }
+                        >span{
+                            font-family: "Lato";
+                        }
+                        i, >span{
+                            margin: auto;
+                        }
+                    }
+                    >.ItemData0{
+                        font-family: "Open Sans";
+                        font-size: 14px;
+                        padding-bottom:2px;
+                        display: inline-flex;
+                        >span{
+                            color:#397eca;
+                            font-size: 14px;
+                            font-family: "Open Sans";
+                            font-weight: bold;
+                        }
+                        >div{
+                            margin-top:2px;
+                            height:0;
+                        }
+                        i{
+                            padding-left:2px;
+                            cursor: pointer;
+                        }
+                    }
+                    >.ItemData1{
+                        padding-top:2px;  
+                        margin: auto 0;
+                        >span{
+                            color:#3B3B3B;
+                            font-size: 18px;
+                            font-weight: bold;
+                            padding-bottom: 4px;
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+.grayPlus{
+    background-color: #fbfbfb !important;
+}
+.tabBold{
+    font-weight: bold;
+}
+
+/*First column*/
+.md-table-column--grow {
+    width: 60%;
+}
+.okGreen{
+    color:#a4c574 !important;
+}
+.okMouse_element_follower{
+    width:80px;
+    height: 16px;
+    margin-left:2px;
+    border-radius: 8px;
+    color:white;
+    font-family: "Open Sans";
+    font-size: 12px;
+    text-align: center;
+    cursor:pointer;
+}
+.noOk{
+    background-color:#FC4646 !important;
+}
+.yesOk{
+    background-color:#a4c574 !important;
+}

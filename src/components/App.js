@@ -79,6 +79,9 @@ function App(props) {
 			</TableHeader>
 			<AppLogic data={props.data} />
 		</DataTable>
+		<div className="showMoreBTN">
+			Show More
+		</div>
 	</div>
 }
 export default App;

@@ -22,7 +22,6 @@ $leftPaddingForTBL:8px;
         .title_{
             display: inline-flex;
             margin:auto;
-            padding-bottom: 8px;
             >.titleText_{
                 font-family: "Lato";
                 width:100%;
@@ -35,19 +34,22 @@ $leftPaddingForTBL:8px;
         table{
             width: 100%;
             border: 1px solid lightgray;
+            border-radius: 4px;
+
             tr{
                 margin:0;
                 padding: 0;
             }
             >thead>tr{
                 background-color: #ecf0f3;
-                height:24px;
+                height:30px;
                 >th{
                     margin:0 auto;
                     padding-top:0;
                     padding-bottom:0;
                     padding-left: $leftPaddingForTBL;
                     font-family: "Lato";
+                    text-align: right;
                     &,>div{
                         height:18px;
                     }
@@ -57,8 +59,9 @@ $leftPaddingForTBL:8px;
             >tbody td{
                 padding-left: $leftPaddingForTBL;
                 padding-top: 6px;
-                padding-bottom: 6px;
+                padding-bottom: 4px;
                 vertical-align: middle;
+                text-align: right;
                 >div{
                     >div{
                         &,>img{
@@ -114,7 +117,10 @@ $leftPaddingForTBL:8px;
                             color:#3B3B3B;
                             font-size: 18px;
                             font-weight: bold;
-                            padding-bottom: 4px;
+                        }
+                        >i{
+                            vertical-align: bottom;
+                            margin-bottom: 4px;
                         }
                     }
                    
@@ -165,4 +171,7 @@ $leftPaddingForTBL:8px;
     border:1px solid lightgray;
     border-top:1px dotted lightgray;
     border-radius: 0 0 2px 2px;
+}
+.taLeft{
+    text-align: left !important;
 }

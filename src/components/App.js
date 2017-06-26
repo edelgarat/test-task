@@ -35,7 +35,7 @@ class AppLogic extends React.Component {
 			{this.props.data.map((item, index) => {
 				let is = index % 2 === 0 ? "grayPlus" : "";
 				return <TableRow key={index} className={is}>
-					<TableColumn>
+					<TableColumn className="taLeft">
 						<div>
 							<div>
 								<img src={item.img} />
@@ -46,7 +46,7 @@ class AppLogic extends React.Component {
 									<AppColumn key={index} item={item} />
 								</div>
 								<div className="ItemData1">
-									<i className="material-icons">&#xE86C;</i>
+									<i className="material-icons">&#xE01D;</i>
 									<span>{item.conters}</span>
 								</div>
 							</div>
@@ -66,12 +66,12 @@ function App(props) {
 			<div className="titleIcon_">
 				<i className="material-icons">&#xE7FB;</i>
 			</div>
-			<div className="titleText_"> Peoples</div>
+			<div className="titleText_"> PEOPLE</div>
 		</div>
 		<DataTable baseId={0} plain>
 			<TableHeader>
 				<TableRow>
-					<TableColumn>Peoples</TableColumn>
+					<TableColumn></TableColumn>
 					<TableColumn>Ideas</TableColumn>
 					<TableColumn>Following</TableColumn>
 					<TableColumn>Followers</TableColumn>

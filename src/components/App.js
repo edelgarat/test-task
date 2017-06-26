@@ -52,9 +52,9 @@ class AppLogic extends React.Component {
 							</div>
 						</div>
 					</TableColumn>
-					<TableColumn className="tabBold">{item.ides}</TableColumn>
-					<TableColumn className="tabBold">{item.following}</TableColumn>
-					<TableColumn className="tabBold">{item.followers}</TableColumn>
+					<TableColumn className="tabBold md-text--secondary">{item.ides}</TableColumn>
+					<TableColumn className="tabBold md-text--secondary">{item.following}</TableColumn>
+					<TableColumn className="tabBold md-text--secondary">{item.followers}</TableColumn>
 				</TableRow>;
 			})}
 		</TableBody>

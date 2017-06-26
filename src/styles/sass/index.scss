@@ -5,7 +5,7 @@ $md-secondary-color: $md-blue-grey-200;
 @include react-md-everything;
 
 
-$leftPaddingForTBL:8px;
+$leftPaddingForTBL:40px;
 .container{
     position: absolute;
     width: 99%;
@@ -15,7 +15,8 @@ $leftPaddingForTBL:8px;
     position: relative;
     margin-left:5%;
     margin-top:2%;
-    width: 90%;
+    /*width: 90%;*/
+    width:993px;
     >.app{
         height:100%; 
         margin-bottom:4%;
@@ -25,9 +26,10 @@ $leftPaddingForTBL:8px;
             >.titleText_{
                 font-family: "Lato";
                 width:100%;
-                margin-left:5px;
+                margin-left:2px;
+                font-weight: bold;
                 &,.titleIcon_>i{
-                    font-size:18px;
+                    font-size:16px;
                 }
             }
         }
@@ -45,11 +47,10 @@ $leftPaddingForTBL:8px;
                 height:30px;
                 >th{
                     margin:0 auto;
-                    padding-top:0;
-                    padding-bottom:0;
                     padding-left: $leftPaddingForTBL;
                     font-family: "Lato";
                     text-align: right;
+                    font-size:18px;
                     &,>div{
                         height:18px;
                     }
@@ -58,16 +59,21 @@ $leftPaddingForTBL:8px;
             >tbody>tr{background-color: white;}
             >tbody td{
                 padding-left: $leftPaddingForTBL;
-                padding-top: 6px;
-                padding-bottom: 4px;
+                &:first-child{
+                    padding-left:10px;
+                    width: 100%;
+                }
+                padding-top: 7px;
+                padding-bottom: 2px;
                 vertical-align: middle;
                 text-align: right;
+                font-size: 18px;
                 >div{
                     >div{
                         &,>img{
                             border-radius: 4px;
-                            width: 45px;
-                            height: 45px;
+                            width: 48px;
+                            height: 48px;
                         } 
                     }   
                     display: inline-flex;
@@ -77,6 +83,7 @@ $leftPaddingForTBL:8px;
                     margin-top:0;
                     margin-bottom: 0;
                     box-sizing: border-box;
+                    margin-top: -2px;
                     
                      >.ItemData0, >.ItemData1{
                         i{
@@ -93,7 +100,7 @@ $leftPaddingForTBL:8px;
                     >.ItemData0{
                         font-family: "Open Sans";
                         font-size: 14px;
-                        padding-bottom:2px;
+                        padding-bottom:4px;
                         display: inline-flex;
                         >span{
                             color:#397eca;
@@ -102,16 +109,17 @@ $leftPaddingForTBL:8px;
                             font-weight: bold;
                         }
                         >div{
-                            margin-top:2px;
+                            margin-top:0px;
                             height:0;
                         }
                         i{
                             padding-left:2px;
+                            margin-top: 2px;
                             cursor: pointer;
                         }
                     }
                     >.ItemData1{
-                        padding-top:2px;  
+                        padding-top:0px;  
                         margin: auto 0;
                         >span{
                             color:#3B3B3B;
@@ -161,7 +169,7 @@ $leftPaddingForTBL:8px;
     background-color:#a4c574 !important;
 }
 .showMoreBTN{
-    width:12%;
+    width:18%;
     margin:auto;
     margin-top:-1px;
     text-align: center;
